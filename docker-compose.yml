@@ -1,0 +1,16 @@
+version: "3.9"
+services: 
+  backend:
+    image:  "test-backend:latest"
+    deploy:
+      replicas: 1
+    ports:
+      - "8080:8080"
+  frontend:
+    image: "test-frontend:latest"
+    deploy:
+      replicas: 1
+    ports:
+      - "80:80"
+    depends_on: 
+      - backend
