@@ -1,0 +1,41 @@
+version: "3.9"
+services: 
+  sonarqube:
+    image: sonarqube:8.9.2-community
+    ports: 
+      - "9000:9000"
+    networks: 
+      - sonarnet
+    environment: 
+      - sonar.jdbc.url=jdbc:postgresql://sonardb:5432/sonar
+      - sonar.jdbc.username=db_admin
+      - sonar.jdbc.password=Test12345
+    volumes: 
+      - sonar_conf:/opt/sonarqube/conf
+      - sonar_data:/opt/sonarqube/data
+      - sonar_logs:/opt/sonarqube/logs
+      - sonar_extensions:/opt/sonarqube/extensions
+  
+  sonardb:
+    image: postgres:13.4-alpine
+    ports:
+      - "5432:5432"
+    networks:
+      - sonarnet
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=Test12345
+    volumes: 
+      - postgresql_data:/var/lib/postgresql/data
+
+
+networks: 
+  sonarnet:
+    driver: bridge
+
+volumes:
+  sonar_data:
+  sonar_conf:
+  sonar_logs:
+  sonar_extensions:
+  postgresql_data:
