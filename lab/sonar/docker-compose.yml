@@ -1,6 +1,7 @@
 version: "3.9"
 services: 
   sonarqube:
+    restart: always
     image: sonarqube:8.9.2-community
     ports: 
       - "9000:9000"
@@ -8,7 +9,7 @@ services:
       - sonarnet
     environment: 
       - sonar.jdbc.url=jdbc:postgresql://sonardb:5432/sonar
-      - sonar.jdbc.username=db_admin
+      - sonar.jdbc.username=sonar
       - sonar.jdbc.password=Test12345
     volumes: 
       - sonar_conf:/opt/sonarqube/conf
@@ -17,6 +18,8 @@ services:
       - sonar_extensions:/opt/sonarqube/extensions
   
   sonardb:
+    hostname: sonardb
+    restart: always
     image: postgres:13.4-alpine
     ports:
       - "5432:5432"
