@@ -1,6 +1,6 @@
 # Setup Sonatype Nexus (Container)
 
-In this lab exercise, we are tasked by **Company A** to setup an Artifact repository application using Nexus v3.
+In this lab exercise, you are tasked by **Company A** to setup an Artifact repository application using Nexus v3.
 Below are the following requirements:
 
 * The application must only be accessed by the administrator and future users that will be included to access it.
