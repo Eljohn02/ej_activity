@@ -11,6 +11,13 @@ Below are the following requirements:
 * The application's database should be hosted on PostgreSQL.
 * Only initial setup for Sonarqube is needed as of the moment.
 
+
+## Important Note
+When you see a note which contains <span style="color:red">**Screenshot Checkpoint**</span>, please take a screenshot on completing the task(s) and save the file name as `git_lab_task_<STEP_NUMBER>_<EID>`.
+
+Image can be **.png** or **.jpeg** format.
+Upload the screenshots to the [Completed Lab Exercises](https://teams.microsoft.com/_#/files/General?threadId=19%3A4btfUNySeEkAxaKgSACQlxGcnuK_2JVxvUDdyHbxYps1%40thread.tacv2&ctx=channel&context=completed_lab_exercises&rootfolder=%252Fsites%252FIXDevSecOpsCapabilityBootcamp%252FShared%2520Documents%252FGeneral%252FCourse%252Fcompleted_lab_exercises) folder of the **IX DevSecOps Capability Bootcamp** channel.
+
 # Steps
 ## Step 1 - Install Docker Engine Commercial Edition
 Before the installation of the Docker Engine, it is required to setup GPG keys and the Docker package repository.
@@ -66,6 +73,7 @@ The steps below will allow us to run Docker without root privileges (sudo).
     
     `sudo newgrp docker`
 
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Step 3 - Install docker-compose
 The steps below will install docker-compose which will be used to create the Sonarqube and PostgreSQL service stack.
@@ -87,6 +95,7 @@ The steps below will install docker-compose which will be used to create the Son
     $ docker-compose --version
     docker-compose version 1.29.2, build 5becea4c
     ```
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Step 4 - Configure Docker Host for Sonarqube
 Sonarqube comes with Elasticsearch out-of-the-box, to ensure that Docker can run Elasticsearch and comply with its **production mode requirements** and **file descriptors configuration**, the following settings need to be configured as root.
@@ -97,6 +106,7 @@ sysctl -w fs.file-max=131072
 ulimit -n 131072
 ulimit -u 8192
 ```
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Step 5 - Clone the lab repository
 1. Change back to your user's home directory and clone the `ix-devops-ci-lab` repository.
@@ -122,8 +132,9 @@ ulimit -u 8192
     49debb3df7f9   sonarqube:8.9.2-community   "bin/run.sh bin/sona…"   9 minutes ago   Up 9 minutes   0.0.0.0:9000->9000/tcp, :::9000->9000/tcp   sonar_sonarqube
     _1
    ```
+<span style="color:red">**Screenshot Checkpoint**</span>
 
-## Step - Access the Sonarqube UI
+## Step 6 - Access the Sonarqube UI
 1. Copy the public IP address of your virtual machine and paste it on a text editor for safe keeping. Take note also of the Sonarqube application port which is **9000**.
    
    ![Copy VM Public IP](images/common/lab_copy_vm_public_ip.png)
@@ -132,7 +143,9 @@ ulimit -u 8192
    Type in username field **admin** and password **admin**.
    ![SonarQube UI initial admin login](images/sonar/lab_sonar_initial_login.png)
 
-## Step - Update the admin password
+<span style="color:red">**Screenshot Checkpoint**</span>
+
+## Step 7 - Update the admin password
 On login, you will be prompted to update your admin account's password.
 Type in the old password which is **admin** and define a new password of your choosing.
 
@@ -142,6 +155,8 @@ Make sure to confirm the new password before clicking the **Update** button.
 
 Once done, you will be sent to the main page of your SonarQube application.
 ![SonarQube UI main page](images/sonar/lab_sonar_web_ui_main_page.png)
+
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Wrap-up
 You have now completed the setup of Sonarqube using Docker Engine, and docker-compose to create the service stack and use postgreSQL to be the database.
