@@ -8,6 +8,12 @@ Below are the following requirements:
 * Only initial setup for the Nexus application is needed as other administrators will handle the setup of other components.
 * A specific version of Nexus v3 is identified and it is **v3.34.0**.
 
+## Important Note
+When you see a note which contains <span style="color:red">**Screenshot Checkpoint**</span>, please take a screenshot on completing the task(s) and save the file name as `git_lab_task_<STEP_NUMBER>_<EID>`.
+
+Image can be **.png** or **.jpeg** format.
+Upload the screenshots to the [Completed Lab Exercises](https://teams.microsoft.com/_#/files/General?threadId=19%3A4btfUNySeEkAxaKgSACQlxGcnuK_2JVxvUDdyHbxYps1%40thread.tacv2&ctx=channel&context=completed_lab_exercises&rootfolder=%252Fsites%252FIXDevSecOpsCapabilityBootcamp%252FShared%2520Documents%252FGeneral%252FCourse%252Fcompleted_lab_exercises) folder of the **IX DevSecOps Capability Bootcamp** channel.
+
 # Steps
 ## Step 1 - Install Docker Engine Commercial Edition
 Before the installation of the Docker Engine, it is required to setup GPG keys and the Docker package repository.
@@ -47,6 +53,7 @@ Before the installation of the Docker Engine, it is required to setup GPG keys a
     Default Runtime: runc
     ...
     ```
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Step 2 - Docker Post-Installation
 The steps below will allow us to run Docker without root privileges (sudo).
@@ -62,6 +69,8 @@ The steps below will allow us to run Docker without root privileges (sudo).
 3. Activate the docker group without closing the session by using the command below.
     
     `sudo newgrp docker`
+
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Step 3 - Install Sonatype Nexus 3
 Now that the Docker Engine is installed, it is time to create the Nexus container instance.
@@ -116,6 +125,8 @@ Below are the steps to achieve this step.
 
     You can also check the container logs by using `docker logs -f nexus`. It should display log information of the initialization and startup of the Nexus application.
 
+<span style="color:red">**Screenshot Checkpoint**</span>
+
 ## Step 4 - Login to the Nexus Web UI
 
 1. To obtain the initial admin password of Nexus, using **sudo**, display the entry contained within the file named **admin.password** which can be located on /nexus-data.
@@ -142,6 +153,8 @@ Below are the steps to achieve this step.
 
     Once the credentials have been provided a new pop-up box will show for the initial setup.
 
+<span style="color:red">**Screenshot Checkpoint**</span>
+
 ## Step 4 - Initial Setup and new Admin Password
 On the initial setup wizard box, click on **Next** to proceed with the setup of your application.
 
@@ -156,6 +169,8 @@ Click on **Next** to proceed with step 3 of the setup wizard.
 
 Save the new password on any secured storage, file or credentials storage software.
 
+<span style="color:red">**Screenshot Checkpoint**</span>
+
 ## Step 5 - Anonymous Access
 Step 3, is for enabling and disabling anonymous access to the Nexus web UI.
 
@@ -167,6 +182,8 @@ For this scenario, this should be set to **Disable anonymous access**. This is t
 
 Once done, click **Next** to proceed with the next step.
 
+<span style="color:red">**Screenshot Checkpoint**</span>
+
 ## Step 6 - Sharing Anonymouse Data
 Step 4, is for allowing Nexus to share anonymouse data to Sonatype.
 
@@ -175,11 +192,15 @@ Set this to **No, not interested** to ensure no data from the application will b
 
 Once done, click **Next** to proceed with the next step.
 
+<span style="color:red">**Screenshot Checkpoint**</span>
+
 ## Step 7 - Setup Completion
 Step 5, is for the finalization of the setup.
 
 Click on the **Finish** button to complete the Setup wizard.
 ![Nexus Setup Wizard Finish](images/nexus/lab_nexus_setup_wizard_step_5.png)
+
+<span style="color:red">**Screenshot Checkpoint**</span>
 
 ## Wrap-up
 You have now completed the setup of Docker Engine, the setup of the Sonatype Nexus v3 container, and the setup wizard.
