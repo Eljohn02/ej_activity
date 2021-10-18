@@ -141,15 +141,15 @@ Below are the steps to achieve this step.
 
 3. Copy the public IP address of your virtual machine and paste it on a text editor for safe keeping and take note of the Nexus application port which is **8081**.
 
-    ![Copy VM Public IP](images/common/lab_copy_vm_public_ip.png)
+    ![Copy VM Public IP](/lab/images/common/lab_copy_vm_public_ip.png)
 
 4. Open any web-browser of choice and navigate to **http://<YOUR_VM_PUBLIC_IP>:8081/**. This should display the welcome page of the application. Click on **Sign-in** to proceed with accessing the application's web UI contents.
 
-    ![Nexus Sign in Page](images/nexus/lab_nexus_sign_in_page.png)
+    ![Nexus Sign in Page](/lab/images/nexus/lab_nexus_sign_in_page.png)
 
 5. In the **Username** field, type in **admin** and on the **Password** filed, copy and paste the admin password. Click the **sign-in** button to continue.
    
-   ![Sign in Credentials](images/nexus/lab_nexus_credentials.png)
+   ![Sign in Credentials](/lab/images/nexus/lab_nexus_credentials.png)
 
     Once the credentials have been provided a new pop-up box will show for the initial setup.
 
@@ -158,12 +158,12 @@ Below are the steps to achieve this step.
 ## Step 4 - Initial Setup and new Admin Password
 On the initial setup wizard box, click on **Next** to proceed with the setup of your application.
 
-![Nexus Setup Wizard Step 1](images/nexus/lab_nexus_setup_wizard_main.png)
+![Nexus Setup Wizard Step 1](/lab/images/nexus/lab_nexus_setup_wizard_main.png)
 
 Step 2 is for the setup of a new admin password to replace the temporary one created and found on the **admin.password** file.
 
 Provide your desired password using any password generator of choice, or type in whatever you think of.
-![Nexus Setup Wizard Step 2](images/nexus/lab_nexus_setup_wizard_step_2.png)
+![Nexus Setup Wizard Step 2](/lab/images/nexus/lab_nexus_setup_wizard_step_2.png)
 
 Click on **Next** to proceed with step 3 of the setup wizard.
 
@@ -178,7 +178,7 @@ Enabling anoynmous access if good if the goal of Nexus will be an artifact repos
 
 For this scenario, this should be set to **Disable anonymous access**. This is to prevent anyone from accessing the web UI and contents such as artifacts, obtaining repository URLs.
 
-![Nexus Setup Wizard Step 3](images/nexus/lab_nexus_setup_wizard_step_3.png)
+![Nexus Setup Wizard Step 3](/lab/images/nexus/lab_nexus_setup_wizard_step_3.png)
 
 Once done, click **Next** to proceed with the next step.
 
@@ -188,7 +188,7 @@ Once done, click **Next** to proceed with the next step.
 Step 4, is for allowing Nexus to share anonymouse data to Sonatype.
 
 Set this to **No, not interested** to ensure no data from the application will be sent.
-![Nexus Setup Wizard Step 4](images/nexus/lab_nexus_setup_wizard_step_4.png)
+![Nexus Setup Wizard Step 4](/lab/images/nexus/lab_nexus_setup_wizard_step_4.png)
 
 Once done, click **Next** to proceed with the next step.
 
@@ -198,7 +198,7 @@ Once done, click **Next** to proceed with the next step.
 Step 5, is for the finalization of the setup.
 
 Click on the **Finish** button to complete the Setup wizard.
-![Nexus Setup Wizard Finish](images/nexus/lab_nexus_setup_wizard_step_5.png)
+![Nexus Setup Wizard Finish](/lab/images/nexus/lab_nexus_setup_wizard_step_5.png)
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
