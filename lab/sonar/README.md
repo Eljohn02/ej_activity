@@ -121,7 +121,7 @@ ulimit -u 8192
 
     This will create the PostgresSQL and Sonarqube containers named sonar_sonardb_1 and sonar_sonarqube_1.
 
-    ![Docker Compose Sonarqube](images/sonar/lab_sonar_docker_compose.png)
+    ![Docker Compose Sonarqube](/lab/images/sonar/lab_sonar_docker_compose.png)
 
 3. Check if the PostgreSQL and Sonarqube containers have been created successfully and are running using `docker ps`.
    
@@ -137,11 +137,11 @@ ulimit -u 8192
 ## Step 6 - Access the Sonarqube UI
 1. Copy the public IP address of your virtual machine and paste it on a text editor for safe keeping. Take note also of the Sonarqube application port which is **9000**.
    
-   ![Copy VM Public IP](images/common/lab_copy_vm_public_ip.png)
+   ![Copy VM Public IP](/lab/images/common/lab_copy_vm_public_ip.png)
 
 2. Open any web-browser of choice and navigate to **http://<YOUR_VM_PUBLIC_IP>:9000/**.
    Type in username field **admin** and password **admin**.
-   ![SonarQube UI initial admin login](images/sonar/lab_sonar_initial_login.png)
+   ![SonarQube UI initial admin login](/lab/images/sonar/lab_sonar_initial_login.png)
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
@@ -151,10 +151,10 @@ Type in the old password which is **admin** and define a new password of your ch
 
 Make sure to confirm the new password before clicking the **Update** button.
    
-![SonarQube UI update admin password](images/sonar/lab_sonar_update_admin_password.png)
+![SonarQube UI update admin password](/lab/images/sonar/lab_sonar_update_admin_password.png)
 
 Once done, you will be sent to the main page of your SonarQube application.
-![SonarQube UI main page](images/sonar/lab_sonar_web_ui_main_page.png)
+![SonarQube UI main page](/lab/images/sonar/lab_sonar_web_ui_main_page.png)
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
