@@ -155,7 +155,7 @@ Below are the steps to achieve this step.
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
-## Step 4 - Initial Setup and new Admin Password
+## Step 5 - Initial Setup and new Admin Password
 On the initial setup wizard box, click on **Next** to proceed with the setup of your application.
 
 ![Nexus Setup Wizard Step 1](/lab/images/nexus/lab_nexus_setup_wizard_main.png)
@@ -171,7 +171,7 @@ Save the new password on any secured storage, file or credentials storage softwa
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
-## Step 5 - Anonymous Access
+## Step 6 - Anonymous Access
 Step 3, is for enabling and disabling anonymous access to the Nexus web UI.
 
 Enabling anoynmous access if good if the goal of Nexus will be an artifact repository that should be accessible by anyone within the company, project and even by the public.
@@ -184,7 +184,7 @@ Once done, click **Next** to proceed with the next step.
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
-## Step 6 - Sharing Anonymouse Data
+## Step 7 - Sharing Anonymouse Data
 Step 4, is for allowing Nexus to share anonymouse data to Sonatype.
 
 Set this to **No, not interested** to ensure no data from the application will be sent.
@@ -194,7 +194,7 @@ Once done, click **Next** to proceed with the next step.
 
 <span style="color:red">**Screenshot Checkpoint**</span>
 
-## Step 7 - Setup Completion
+## Step 8 - Setup Completion
 Step 5, is for the finalization of the setup.
 
 Click on the **Finish** button to complete the Setup wizard.
